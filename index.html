@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav container">
+        <img src="./logo.png" alt="web dev" class="nav-logo" unselectable="on">
+        
+        <!-- Hamburger menu button -->
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Navigation options -->
+        <ul class="nav-options" id="nav-options">
+            <li class="nav-option"><a href="#home">Home</a></li>
+            <li class="nav-option"><a href="#exp">Experience</a></li>
+            <li class="nav-option"><a href="#about">About</a></li>
+            <li class="nav-option"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+
+        <button class="hire-me">Hire Me</button>
+    </nav>
+    <section class="hero container" id="home">
+        <div class="content">
+            <p class="hero-subtitle">Create your sites like a pro</p>
+            <h3 class="hero-title">Hi, I am Jawad, Web Developer</h3>
+            <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat. Porro quos molestias debitis corrupti exercitationem perferendis molestiae dolore, delectus placeat tempora doloremque consectetur libero eveniet, magni iusto eaque velit et dolores officia aut vero. Dolorum tenetur optio repudiandae ratione error voluptate sapiente sed fuga!</p>
+            <button class="hero-button">Get started</button>   
+        </div>
+
+        <img src="./header.png" alt="Im web developer" class="hero-img">
+    </section>
+    <h2 class="exp-main" id="exp">My experience</h2>
+    <section class="exp container">
+        <div class="exp-html">
+            <img src="./html.png" alt="" class="html-logo">
+            <p class="exp-head h-html">Html</p>
+            
+            <p class="exp-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi officia, nisi, nesciunt ipsam ut beatae voluptate quam consectetur harum libero reiciendis excepturi ducimus aspernatur. Labore doloribus pariatur magnam animi.</p>
+        </div>
+        <div class="exp-css">
+            <img src="./css.png" alt="" class="css-logo">
+            
+           
+            <p class="exp-head h-css">Css</p>
+            <p class="exp-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi officia, nisi, nesciunt ipsam ut beatae voluptate quam consectetur harum libero reiciendis excepturi ducimus aspernatur. Labore doloribus pariatur magnam animi.</p>
+        </div>
+        <div class="exp-js">
+            <img src="./js.png" alt="" class="js-logo">
+            <p class="exp-head h-js">Javascript</p>
+            
+            <p class="exp-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modi officia, nisi, nesciunt ipsam ut beatae voluptate quam consectetur harum libero reiciendis excepturi ducimus aspernatur. Labore doloribus pariatur magnam animi.</p>
+        </div>
+    </section>
+    <h3 class="exp-main section-main container">About Me</h3>
+    <section class="about" id="about">
+        <div class="about-card">
+            <img src="logo.png" alt="" class="about-img">
+            <h3 class="about-name">Redwan Raiyan Jawad</h3>
+            <p class="about-honor">Web Developer</p>
+            <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam aspernatur ad animi consequatur asperiores! Eius consectetur fugiat velit corrupti voluptatum earum sunt sed quaerat nesciunt accusantium veniam laborum dicta amet sapiente molestiae, officia totam ipsum pariatur quisquam reprehenderit vero itaque delectus? Architecto soluta exercitationem fugiat rem enim eaque, hic dicta laudantium placeat nulla natus minima dolore vel! Voluptatem, rem autem.</p>
+        </div>
+    </section>
+
+    <section class="contact-me container" id="contact-me">
+        <div class="form">
+            <h3 class="form-text">Contact me</h3>
+            <form class="form-main" method="post">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name" placeholder="Enter your name: ">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email: ">
+                <label for="msg">Your message: </label>
+                <textarea name="msg" id="msg" class="textarea" rows="10" cols="30" placeholder="Your message"></textarea>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="connect">
+            <p>Get connected With us on social networks</p>
+            <div class="connect-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+
+
+  <script src="./script.js">
+const hamburger = document.getElementById('hamburger');
+const navOptions = document.getElementById('nav-options');
+
+// Toggle the 'active' class on the nav-options to show/hide the menu
+hamburger.addEventListener('click', () => {
+    navOptions.classList.toggle('active');
+});
+
+  </script>
+  <script src="https://kit.fontawesome.com/8a344ddfc8.js" crossorigin="anonymous"></script>
+        
+</body>
+</html>
